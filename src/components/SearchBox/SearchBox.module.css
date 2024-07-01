@@ -1,0 +1,19 @@
+
+
+.searchBox {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  margin-bottom: 30px ;
+  margin-left: 290px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 18px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchBox:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
