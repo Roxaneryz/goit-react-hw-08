@@ -4,8 +4,9 @@
   width: 100%;
   max-width: 300px;
   padding: 8px;
-  margin-bottom: 30px ;
-  margin-left: 290px;
+  margin: 0 570px 30px 570px;
+  /* margin-bottom: 30px ;
+  margin-left: 810px; */
   border: 2px solid #ddd;
   border-radius: 6px;
   font-size: 18px;
