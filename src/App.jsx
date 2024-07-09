@@ -7,6 +7,8 @@ import Layout from "./components/Layout";
 import RestrictedRoute from "./components/RestrictedRoute";
 import PrivateRoute from "./components/PrivateRoute";
 import { Toaster } from "react-hot-toast";
+import { Suspense } from "react";
+
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const RegistrationPage = lazy(() =>
@@ -30,29 +32,37 @@ const App = () => {
     <b>Refreshing user, please wait...</b>
   ) : (
     <Layout>
-      <Toaster position="top-center" reverseOrder={false} />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route
-          path="/register"
-          element={
-            <RestrictedRoute
-              redirectTo="/contacts"
-              component={<RegistrationPage />}
-            />
-          }
+      <Suspense fallback={null}>
+        <Toaster position="top-center" reverseOrder={false} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/register"
+            element={
+              <RestrictedRoute
+                redirectTo="/contacts"
+                component={<RegistrationPage />}
+              />
+            }
           />
-          <Route path=".login" element={<RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />}
-        // <Route path="/login" element={<RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
-          
-        />
-        <Route
-          path="/contacts"
-          element={
-            <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
-          }
-        />
-      </Routes>
+          <Route
+            path=".login"
+            element={
+              <RestrictedRoute
+                redirectTo="/contacts"
+                component={<LoginPage />}
+              />
+            }
+            // <Route path="/login" element={<RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
+          />
+          <Route
+            path="/contacts"
+            element={
+              <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
+            }
+          />
+        </Routes>
+      </Suspense>
     </Layout>
   );
 };
