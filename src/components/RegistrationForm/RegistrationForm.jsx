@@ -18,15 +18,30 @@ const RegistrationForm = () => {
       <Form className="registration-form">
         <label>
           Name
-          <Field type="text" name="name" required />
+          <Field
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
         </label>
         <label>
           Email
-          <Field type="email" name="email" required />
+          <Field
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
         </label>
         <label>
           Password
-          <Field type="password" name="password" required />
+          <Field
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
         </label>
         <button type="submit">Register</button>
       </Form>

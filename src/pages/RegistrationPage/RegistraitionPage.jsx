@@ -4,7 +4,7 @@ const RegistraitionPage = () => {
   return (
       <div>
           <h1>
-              Restiger your account</h1>
+              Create your account</h1>
       <RegistrationForm/>
       </div>
   )
