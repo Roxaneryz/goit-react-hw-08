@@ -16,11 +16,21 @@ const LoginForm = () => {
       <Form className="login-form" autoComplete="off">
         <label>
           Email
-          <Field type="email" name="email" required />
+          <Field
+            type="email"
+            name="email"
+            placeholder="Enter you email"
+            required
+          />
         </label>
         <label>
           Password
-          <Field type="password" name="password" required />
+          <Field
+            type="password"
+            name="password"
+            placeholder="Enter you password"
+            required
+          />
         </label>
         <button type="submit">Login</button>
       </Form>

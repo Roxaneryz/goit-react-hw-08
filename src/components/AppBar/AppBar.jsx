@@ -4,13 +4,13 @@ import AuthNav from "../AuthNav/AuthNav.jsx"
 import css from "./AppBar.module.css"
 import { useSelector } from "react-redux"
 import { selectIsLoggedIn, selectIsRefreshing } from "../../redux/auth/selectors.js"
-import { NavLink } from "react-router-dom"
+// import { NavLink } from "react-router-dom"
 
 const AppBar = () => {
     const isLoggedIn = useSelector(selectIsLoggedIn);
     const isRefreshing = useSelector(selectIsRefreshing);
     return (
-      <header>
+      <header className={css.header}>
         <Navigation />
         {/* { isLoggedIn && (<NavLink to="/contacts"> Contacts</NavLink>)} */}
         {!isRefreshing && <div> {isLoggedIn ? <UserMenu /> : <AuthNav />}</div>}

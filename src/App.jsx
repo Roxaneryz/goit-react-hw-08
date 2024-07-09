@@ -22,7 +22,7 @@ const App = () => {
   
   const isRefreshing = useSelector(selectIsRefreshing);
     useEffect(() => {
-        dispatch(refreshUser());
+        dispatch(refreshUser()).unwrap().then(()=> Toaster.success("You are successfully login!")).catch()
     }, [dispatch]);
  
 
