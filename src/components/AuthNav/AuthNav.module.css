@@ -1,0 +1,15 @@
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+}
+
+.link {
+  color: #fff; /* Text color */
+  text-decoration: none;
+  margin-left: 1rem; /* Adjust spacing between links */
+}
+
+.link:hover {
+  text-decoration: underline; /* Underline on hover */
+}

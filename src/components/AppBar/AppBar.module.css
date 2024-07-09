@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2196f3; /* Change this to your desired background color */
+  color: #fff; /* Text color */
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem; /* Adjust spacing between links */
+}
+
+.header a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header > div > div {
+  margin-left: auto; /* Push UserMenu or AuthNav to the right */
+}

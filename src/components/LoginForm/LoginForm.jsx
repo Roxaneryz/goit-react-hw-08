@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { Formik, Form, Field } from "formik";
 import { logIn } from "../redux/auth/operations";
+import css from "./LoginForm.module.css"
 // import "./LoginForm.css"; // Додаємо підключення стилів
 
 const LoginForm = () => {
@@ -13,7 +14,7 @@ const LoginForm = () => {
 
   return (
     <Formik initialValues={{ email: "", password: "" }} onSubmit={handleSubmit}>
-      <Form className="login-form" autoComplete="off">
+      <Form className={css.loginForm} autoComplete="off">
         <label>
           Email
           <Field
