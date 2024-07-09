@@ -1,0 +1,30 @@
+.loginPage {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loginPage h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.loginPage p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.loginPage a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.loginPage a:hover {
+  color: #0056b3;
+}

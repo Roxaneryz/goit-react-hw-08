@@ -1,5 +1,5 @@
-import css from "./UserMenu.nodule.css"
-import { useSelector } from "react-router-dom";
+import css from "./UserMenu.module.css"
+import { useSelector } from "react-redux";
 import { selectUser } from "../../redux/auth/selectors";
 import { useDispatch } from "react-redux";
 import { logOut } from "../../redux/auth/operations";

@@ -1,0 +1,22 @@
+.contactPage {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  margin-bottom: 20px;
+}
+
+.searchBox {
+  margin-bottom: 20px;
+}
+
+.contactList {
+  margin-bottom: 20px;
+}

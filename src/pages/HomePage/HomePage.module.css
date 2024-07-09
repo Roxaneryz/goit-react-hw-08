@@ -1,0 +1,27 @@
+.homePage {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.welcomeMessage {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subMessage {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3;
+}
