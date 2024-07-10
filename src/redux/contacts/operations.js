@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+// import toast from "react-hot-toast";
 
 axios.defaults.baseURL = "https://6681bf7704acc3545a0783c6.mockapi.io";
 
@@ -37,4 +38,21 @@ export const deleteContact = createAsyncThunk("contacts/deleteContact",
             return thunkAPI.rejectWithValue(error.message);
         }
     }
-)
+);
+
+// export const updateContact = createAsyncThunk(
+//   "contacts/updateContact",
+//   async (contact, thunkAPI) => {
+//     try {
+//       const response = await axios.patch(
+//         `/api/contacts/${contact.id}`,
+//         contact
+//       );
+//       toast.success("Contact updated successfully!");
+//       return response.data;
+//     } catch (error) {
+//       toast.error("Failed to update contact.");
+//       return thunkAPI.rejectWithValue(error.response.data);
+//     }
+//   }
+// );

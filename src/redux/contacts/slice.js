@@ -57,7 +57,7 @@ const contactSlice = createSlice({
     .addCase(logOut.fulfilled, (state) => {
       state.items = [];
       state.error = null;
-      state.isLoading = false;
+      state.loading = false;
 
     });
   },

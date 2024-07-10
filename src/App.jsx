@@ -24,7 +24,8 @@ const App = () => {
   
   const isRefreshing = useSelector(selectIsRefreshing);
     useEffect(() => {
-        dispatch(refreshUser()).unwrap().then(()=> Toaster.success("You are successfully login!")).catch()
+      dispatch(refreshUser())
+        // .unwrap().then(() => Toaster.success("You are successfully login!")).catch()
     }, [dispatch]);
  
 
