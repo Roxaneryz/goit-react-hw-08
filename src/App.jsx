@@ -12,7 +12,7 @@ import { Suspense } from "react";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const RegistrationPage = lazy(() =>
-  import("./pages/RegistrationPage/RegistraitionPage")
+  import("./pages/RegistrationPage/RegistrationPage")
 );
 const LoginPage = lazy(() => import("./pages/LoginPage/LoginPage"));
 const ContactsPage = lazy(() =>
@@ -47,7 +47,7 @@ const App = () => {
             }
           />
           <Route
-            path=".login"
+            path="/login"
             element={
               <RestrictedRoute
                 redirectTo="/contacts"

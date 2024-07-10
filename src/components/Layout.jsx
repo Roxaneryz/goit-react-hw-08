@@ -1,11 +1,11 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import AppBar from "./AppBar/AppBar";
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
     <div>
       <AppBar />
-      <Outlet />
+      {children}
     </div>
   );
 };

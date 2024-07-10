@@ -3,24 +3,29 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 axios.defaults.baseURL = "https://connections-api.goit.global";
 
-
+// const instance = axios.create({
+//   baseURL: "https://connections-api.goit.global",
+// });
 // Функція для встановлення токена авторизації в заголовки запитів
 
 const setAuthHeader = token => {
-    axios.defaults.common["Authorization"] = `Bearer ${token}`;
+    // console.log(axios.defaults);
+    axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
+    
 }
 
 // Функція для очищення заголовків авторизації
 
 const clearAuthHeader = () => {
-    axios.defaults.common["Authorization"] = "";
+    axios.defaults.headers.common["Authorization"] = "";
+    
 }
 
 // Операція для реєстрації нового користувача
 
 export const register = createAsyncThunk("auth/register", async (userInfo, thunkAPI) => {
     try {
-        const response = await axios.post("/users/singup", userInfo);
+        const response = await axios.post("/users/signup", userInfo);
         setAuthHeader(response.data.token);
         return response.data;
     } catch (error){
@@ -33,7 +38,7 @@ export const register = createAsyncThunk("auth/register", async (userInfo, thunk
 export const logIn = createAsyncThunk("auth/login",
     async (userInfo, thunkAPI) => {
         try {
-            const response = await axios.post("/users/loin", userInfo)
+            const response = await axios.post("/users/login", userInfo)
              setAuthHeader(response.data.token);
             return response.data;
         } catch (error) {

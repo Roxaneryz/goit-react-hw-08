@@ -1,1 +1,5 @@
-export const selectContacts = (state) => state.contacts.items;
+export const selectContacts = (state) => {
+    
+    console.log(state);
+    return state.contacts.items
+};
