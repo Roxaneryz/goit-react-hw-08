@@ -1,12 +1,15 @@
 // import { Outlet } from "react-router-dom";
+import { Flex } from "antd";
 import AppBar from "./AppBar/AppBar";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <div>
+    <Flex vertical style={{width:"100vw", height:"100vh"}}
+
+>
       <AppBar />
       {children}
-    </div>
+    </Flex>
   );
 };
 

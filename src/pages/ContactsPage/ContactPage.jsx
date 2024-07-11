@@ -6,7 +6,7 @@ import { fetchContacts } from "../../redux/contacts/operations";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
-
+import { Flex } from "antd";
 
 const ContactPage = () => {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ const ContactPage = () => {
   }, [dispatch]);
 
   return (
-    <div className={css.contactPage}>
+    <Flex align="center" vertical gap="20px" className={css.contactPage}>
       <h1 className={css.header}>Contacts Page</h1>
       <div className={css.contactForm}>
         <ContactForm />
@@ -28,7 +28,7 @@ const ContactPage = () => {
       <div className={css.contactList}>
         <ContactList />
       </div>
-    </div>
+    </Flex>
   );
 };
 

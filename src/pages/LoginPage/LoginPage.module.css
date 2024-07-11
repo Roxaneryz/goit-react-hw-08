@@ -3,9 +3,14 @@
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
-  background-color: #f9f9f9;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .loginPage h2 {

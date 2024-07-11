@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
 import * as Yup from "yup";
 import css from "./RegistrationForm.module.css"
+import { Flex } from "antd";
+
 
 const RegistrationForm = () => {
   const dispatch = useDispatch();
@@ -28,35 +30,43 @@ const RegistrationForm = () => {
       {({ errors, touched }) => (
         <Form className={css["registration-form"]}>
           <label className={css.label}>
-            Name
-            <Field
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              className={`${css.input} ${
-                errors.name && touched.name ? css.inputError : ""
-              }`}
-            />
+            <Flex vertical align="flex-start">
+             
+              Name
+              <Field
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                className={`${css.input} ${
+                  errors.name && touched.name ? css.inputError : ""
+                }`}
+              />
+            </Flex >
             <ErrorMessage name="name" component="div" className={css.error} />
           </label>
           <label className={css.label}>
-            Email
-            <Field
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              className={css.input}
-            />
+            <Flex vertical align="flex-start">
+              Email
+              <Field
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                className={css.input}
+              />
+            </Flex>
             <ErrorMessage name="email" component="div" className={css.error} />
           </label>
           <label className={css.label}>
-            Password
-            <Field
-              type="password"
-              name="password"
-              placeholder="Enter your password"
-              className={css.input}
-            />
+            <Flex vertical align="flex-start">
+              
+              Password
+              <Field
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                className={css.input}
+              />
+            </Flex>
             <ErrorMessage
               name="password"
               component="div"

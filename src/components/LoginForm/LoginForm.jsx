@@ -48,7 +48,7 @@ const validationSchema = Yup.object().shape({
             placeholder="Enter you password"
             required
           />
-          <ErrorMessage name="email" component="div" className={css.error} />
+          <ErrorMessage name="password" component="div" className={css.error} />
         </label>
         <button type="submit">Login</button>
       </Form>
