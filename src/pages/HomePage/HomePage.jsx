@@ -8,9 +8,9 @@ const HomePage = () => {
 
   return (
     <div className={css.homePage}>
-      <h2 className={css.welcomeMessage}>
+      <h1 className={css.welcomeMessage}>
         Welcome to your Personal Contact Book!
-      </h2>
+      </h1>
       <h3 className={css.subMessage}>
         Keep your contacts organized.{" "}
         <Link to="/login" className={css.link}>
