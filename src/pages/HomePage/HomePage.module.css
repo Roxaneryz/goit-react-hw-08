@@ -1,27 +1,29 @@
 .homePage {
   padding: 20px;
   text-align: center;
+  color: #f7f7f7;
   /* background-color: #c23535; */
 }
 
 .welcomeMessage {
-  font-size: 28px;
+  font-size: 50px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
+  margin-top: 200px;
 }
 
 .subMessage {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 .link {
-  color: #007bff;
+  color: #f7f7f7;
   text-decoration: none;
   margin: 0 5px;
   transition: color 0.3s ease;
 }
 
 .link:hover {
-  color: #0056b3;
+  color: #06090d;
 }

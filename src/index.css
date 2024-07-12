@@ -15,16 +15,17 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #06060b;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #c2c4f8;
 }
 
 body {
 
-    background-image: url('https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url("https://img.freepik.com/free-vector/technology-blue-particles-frame-background_23-2148428035.jpg?w=996&t=st=1720775528~exp=1720776128~hmac=e85a4aaf3e2f76abad0cd99c4ccf394f8bd8d6cf8f0762e4f61227c4d14a557b");
+      /* 'https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg?w=996&t=st=1720775309~exp=1720775909~hmac=2de2ba7508dccd4052c828a3b2682999f075df96761359c3090a65dad05df3ea'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

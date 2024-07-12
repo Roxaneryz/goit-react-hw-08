@@ -7,12 +7,16 @@ const Navigation = () => {
     const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
     <nav>
-      <NavLink to="/" className={css.navlink}>
-        Home
-      </NavLink>
-          {isLoggedIn && (<NavLink to="/contacts" className={css.navlink}>
-              Your Contacts
-          </NavLink>)}
+      <flex>
+        <NavLink to="/" className={css.navlink}>
+          Home
+        </NavLink>
+        {isLoggedIn && (
+          <NavLink to="/contacts" className={css.navlink}>
+            Your Contacts
+          </NavLink>
+        )}
+      </flex>
     </nav>
   );
 }

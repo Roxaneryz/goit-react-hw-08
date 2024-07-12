@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage} from "formik";
 import { logIn } from "../../redux/auth/operations";
 import css from "./LoginForm.module.css"
 import * as Yup from "yup";
+import { Flex } from "antd";
 // import "./LoginForm.css"; // Додаємо підключення стилів
 
 const LoginForm = () => {
@@ -31,23 +32,27 @@ const validationSchema = Yup.object().shape({
     >
       <Form className={css.loginForm} autoComplete="off">
         <label>
-          Email
-          <Field
-            type="email"
-            name="email"
-            placeholder="Enter you email"
-            required
-          />
+          <Flex vertical align="flex-start">
+            Email
+            <Field
+              type="email"
+              name="email"
+              placeholder="Enter you email"
+              required
+            />
+          </Flex>
           <ErrorMessage name="email" component="div" className={css.error} />
         </label>
         <label>
-          Password
-          <Field
-            type="password"
-            name="password"
-            placeholder="Enter you password"
-            required
-          />
+          <Flex vertical align="flex-start">
+            Password
+            <Field
+              type="password"
+              name="password"
+              placeholder="Enter you password"
+              required
+            />
+          </Flex>
           <ErrorMessage name="password" component="div" className={css.error} />
         </label>
         <button type="submit">Login</button>

@@ -3,12 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #2196f3; /* Change this to your desired background color */
+  background-color: #c0c4ff6d; /* Change this to your desired background color */
   color: #fff; /* Text color */
 }
 
 .header a {
-  color: #fff;
+  color: #ebebeb;
+  font-size: 20px;
+ 
   text-decoration: none;
   margin-left: 1rem; /* Adjust spacing between links */
 }
