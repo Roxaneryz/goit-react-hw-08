@@ -13,7 +13,8 @@ const HomePage = () => {
       </h1>
 
       <h3 className={css.subMessage}>
-        Keep your contacts organized. Login or register to start now.
+        Keep your contacts organized.
+Login or register to start now.
       </h3>
     </div>
   );
