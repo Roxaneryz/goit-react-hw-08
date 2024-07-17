@@ -9,11 +9,11 @@ const HomePage = () => {
   return (
     <div className={css.homePage}>
       <h1 className={css.welcomeMessage}>
-        Welcome to your Personal Contact Book!
+        Welcome to your <br/>Personal Contact Book!
       </h1>
-
+<hr/>
       <h3 className={css.subMessage}>
-        Keep your contacts organized.
+        Keep your contacts organized.<br/>
 Login or register to start now.
       </h3>
     </div>
